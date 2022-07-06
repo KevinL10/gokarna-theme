@@ -294,6 +294,7 @@ table td {
 /* HOME PAGE */
 .home-about {
   text-align: center;
+  margin-top: 200px;
 }
 
 .home-about .avatar img {
@@ -326,6 +327,15 @@ table td {
 .home-about .avatar img.size-xl {
   height: 15rem;
   width: 15rem;
+}
+
+.home-about .subtitle {
+  font-size: 25px;
+}
+
+.home-about .title {
+  font-size: 100px;
+  font-weight: 100;
 }
 
 .social-icons {
