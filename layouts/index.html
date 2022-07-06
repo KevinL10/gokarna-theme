@@ -1,11 +1,12 @@
 {{ define "main" }}
 <section class="home-about">
-	<div class="avatar">
+	<!-- <div class="avatar">
         {{ if isset .Site.Params "avatarurl" }}
         <img class={{ .Site.Params.AvatarSize | default "size-m" }} src='{{ .Site.BaseURL }}{{ .Site.Params.AvatarURL }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}" />
         {{ end }}
-	</div>
-    <h1>{{ .Site.Title }}</h1>
+	</div> -->
+    <em class="subtitle">Hey, I'm</em>
+    <div class="title">{{ .Site.Title }}</div>
     <h3>{{ .Site.Params.Description }}</h3>
 </section>
 
