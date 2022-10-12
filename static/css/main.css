@@ -6,6 +6,7 @@
   --light-secondary-color: #dddddd;
   --light-tertiary-color: #272822;
   --light-text-color: black;
+  --light-hover-color: #32a08a;
 }
 
 @font-face {
@@ -40,11 +41,13 @@ strong {
 
 a {
   color: inherit;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
 }
 
 /* This is set in partials/head.html and is populated via config */
 a:hover {
-  color: var(--accent-color);
+  color: var(--light-hover-color);
   fill: var(--accent-color);
 }
 
@@ -332,7 +335,7 @@ blockquote {
 
 hr {
   color: var(--light-secondary-color);
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 table {
@@ -357,9 +360,9 @@ table td {
 }
 
 /* HOME PAGE */
-.home-about, .home-content {
+.home-about {
   text-align: center;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 
 .home-about .avatar img {
@@ -394,12 +397,9 @@ table td {
   width: 15rem;
 }
 
-.home-about .subtitle {
-  font-size: 25px;
-}
 
 .home-about .title {
-  font-size: 100px;
+  font-size: 3rem;
   font-weight: 100;
 }
 
@@ -431,6 +431,14 @@ table td {
   margin: auto;
   padding-top: 20px;
   width: 80%;
+}
+
+.home-content {
+  margin: auto;
+  padding-top: 10px;
+  width: 80%;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
 }
 
 /* SINGLE */
