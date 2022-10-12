@@ -362,7 +362,14 @@ table td {
 /* HOME PAGE */
 .home-about {
   text-align: center;
-  /* margin-top: 200px; */
+}
+
+.home-content {
+  margin: auto;
+  padding-top: 10px;
+  width: 80%;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
 }
 
 .home-about .avatar img {
@@ -431,14 +438,6 @@ table td {
   margin: auto;
   padding-top: 20px;
   width: 80%;
-}
-
-.home-content {
-  margin: auto;
-  padding-top: 10px;
-  width: 80%;
-  line-height: 1.7;
-  letter-spacing: 0.5px;
 }
 
 /* SINGLE */
