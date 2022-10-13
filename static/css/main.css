@@ -335,7 +335,7 @@ blockquote {
 
 hr {
   color: var(--light-secondary-color);
-  margin: 20px auto;
+  margin: 0 auto 10px;
 }
 
 table {
@@ -408,6 +408,12 @@ table td {
 .home-about .title {
   font-size: 3rem;
   font-weight: 100;
+  /* color: var(--accent-color); */
+}
+
+.home-about h3 {
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .social-icons {
