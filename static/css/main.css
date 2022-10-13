@@ -2,6 +2,7 @@
   --content-width: 1120px;
   --container-width: 810px;
 
+  /* --light-primary-color: 240, 240, 240; */
   --light-primary-color: 255, 255, 255;
   --light-secondary-color: #dddddd;
   --light-tertiary-color: #272822;
@@ -333,7 +334,7 @@ blockquote {
   margin-left: 0;
 }
 
-hr {
+.home-content hr {
   color: var(--light-secondary-color);
   margin: 0 auto 10px;
 }
@@ -503,6 +504,56 @@ table td {
 .post-title .post-link {
   width: 80%;
 }
+
+.list-posts .project-title {
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: -3px 4px;
+}
+
+.project-title .project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title .project-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title .project-image {
+  flex-grow: 3;
+  flex-basis: 35%;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+
+.project-title .project-image img {
+  border-color: grey;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: .15rem;
+}
+
+
+.project-title .project-description {
+  flex-grow: 6;
+  flex-basis: 55%;
+}
+
+.project-title .project-description a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 2px;
+}
+
+
 .tags-list .post-tags {
   margin-top: 50px;
 }

@@ -1,0 +1,15 @@
+<div class="project-title">
+    <div class="project-top">
+        <div style="font-size: 1.5rem; font-weight: bold;"> <a href="{{.Params.Link}}">{{.Title}}</a> </div>
+        <div class="project-date"> {{ .Date.Format "January 2, 2006" }} </div>
+    </div>
+    <hr>
+    <div class="project-content">
+        <div class="project-image">
+            <img src="{{.Params.Image}}" alt="{{.Params.Alt}}" loading="lazy"></img>
+        </div>
+        <div class="project-description">
+            {{ .Content }}
+        </div>
+    </div>
+</div>

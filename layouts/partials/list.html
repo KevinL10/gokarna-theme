@@ -2,13 +2,19 @@
 
     <h1 class="list-title">{{ .Name }}</h2>
 
-    {{ range (where .Pages "Params.type" "post" ).GroupByDate "2006" }}
+    {{if eq .Type "posts"}}
+        {{ range (where .Pages "Params.type" "post" ).GroupByDate "2006" }}
 
-    <h2 class="posts-year">{{ .Key }}</h2>
+        <h2 class="posts-year">{{ .Key }}</h2>
 
-    {{- range .Pages  -}}
-        {{- partial "list-posts.html" . -}}
+        {{- range .Pages  -}}
+            {{- partial "list-posts.html" . -}}
+        {{ end }}
     {{ end }}
+    {{else if eq .Type "projects"}}
+        {{- range .Pages  -}}
+            {{- partial "list-projects.html" . -}}
+        {{ end }}
     {{ end }}
 
 </div>
