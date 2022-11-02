@@ -412,6 +412,10 @@ table td {
   /* color: var(--accent-color); */
 }
 
+.home-about .name {
+  color: var(--accent-color);
+}
+
 .home-about h3 {
   margin-top: 1em;
   margin-bottom: 0;
